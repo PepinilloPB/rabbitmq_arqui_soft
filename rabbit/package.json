@@ -1,0 +1,20 @@
+{
+  "name": "rabbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "subscriber.js",
+  "scripts": {
+    "studentP": "nodemon src/publishers/student.js",
+    "studentS": "nodemon src/subscribers/student.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

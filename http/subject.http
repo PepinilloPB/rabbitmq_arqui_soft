@@ -1,0 +1,41 @@
+###Listar materias
+GET http://localhost:3000/v1/api/subjects
+
+###Listar materia con subject_id = 1
+GET http://localhost:3000/v1/api/subjects/1
+
+###Crear nueva materia
+POST http://localhost:3000/v1/api/subjects
+Content-Type: application/json
+
+{
+    "name" : "Arquitectura de Software",
+    "semester" : 7,
+    "credits" : 6
+}
+
+###Actualizar profesor
+PUT http://localhost:3000/v1/api/subjects/1
+Content-Type: application/json
+
+{
+    "name" : "Arquitectura de Software SIS-311",
+    "semester" : 7,
+    "credits" : 6
+}
+
+###Registrar profesor 1 en materia 1
+PUT http://localhost:3000/v1/api/subjects/1/teacher
+Content-Type: application/json
+
+{
+    "teacher_id" : 1
+}
+
+###Registrar estudiente 2 en materia 1
+PUT http://localhost:3000/v1/api/subjects/1/student
+Content-Type: application/json
+
+{
+    "student_id" : 1
+}

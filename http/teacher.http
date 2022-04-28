@@ -1,0 +1,25 @@
+###Listar profesores
+GET http://localhost:3000/v1/api/teachers
+
+###Listar profesor con teacher_id = 1
+GET http://localhost:3000/v1/api/teachers/1
+
+###Crear nuevo profesor
+POST http://localhost:3000/v1/api/teachers
+Content-Type: application/json
+
+{
+    "first_name" : "Edgar",
+    "last_name" : "Carrasco",
+    "email" : "eddy@noreply.com"
+}
+
+###Actualizar profesor
+PUT http://localhost:3000/v1/api/teachers/1
+Content-Type: application/json
+
+{
+    "first_name" : "Edgar Fabian",
+    "last_name" : "Carrasco Claros",
+    "email" : "eddy@noreply.com"
+}

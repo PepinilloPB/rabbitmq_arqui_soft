@@ -1,0 +1,25 @@
+###Listar estudiantes
+GET http://localhost:3000/v1/api/students
+
+###Listar estudiante con student_id = 1
+GET http://localhost:3000/v1/api/students/1
+
+###Crear nuevo esudiante
+POST http://localhost:3000/v1/api/students
+Content-Type: application/json
+
+{
+    "first_name" : "Edgar",
+    "last_name" : "Carrasco",
+    "email" : "eddy@noreply.com"
+}
+
+###Actualizar esudiante
+PUT http://localhost:3000/v1/api/students/1
+Content-Type: application/json
+
+{
+    "first_name" : "Edgar Fabian",
+    "last_name" : "Carrasco Claros",
+    "email" : "eddy@noreply.com"
+}
